@@ -223,7 +223,7 @@ Transform:
   m_GameObject: {fileID: 118563709}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5, y: -1.81, z: 0}
+  m_LocalPosition: {x: 5, y: -1, z: 0}
   m_LocalScale: {x: 4.1731, y: 4.1731, z: 4.1731}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -363,10 +363,11 @@ Transform:
   m_GameObject: {fileID: 1587134450}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 10, z: 0}
+  m_LocalPosition: {x: 0, y: 3.5, z: 1.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1918115974}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1918115971
@@ -380,6 +381,7 @@ GameObject:
   - component: {fileID: 1918115974}
   - component: {fileID: 1918115973}
   - component: {fileID: 1918115972}
+  - component: {fileID: 1918115975}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -454,18 +456,32 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1918115971}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.0858995, y: 0.9003031, z: -0.20737816, w: 0.37292063}
-  m_LocalPosition: {x: -2.02, y: 7.8, z: 8.04}
+  m_LocalRotation: {x: 0.26329252, y: 0.62360704, z: -0.25839216, w: 0.6892205}
+  m_LocalPosition: {x: -10.488204, y: 9.785009, z: -3.307191}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 25.943, y: 135, z: 0}
+  m_Father: {fileID: 1587134452}
+  m_LocalEulerAnglesHint: {x: 43.252, y: 83.41, z: -2.187}
+--- !u!114 &1918115975
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1918115971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd58274068dbac34f822e4fd7af41225, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  JengaSpawner: {fileID: 1587134450}
+  rotateSpeed: 500
+  scrollSpeed: 2000
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 1918115974}
   - {fileID: 355719194}
   - {fileID: 118563713}
   - {fileID: 1587134452}
